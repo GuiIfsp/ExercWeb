@@ -80,26 +80,3 @@ function fatorial(n:number){
 
     return temp
 }
-
-//Função que recebe um array de numeros e retorna um array com os numeros em ordem crescente
-function Ordenar(lista:number[]){
-    let i: number
-    let temp: number
-
-    for(i = 0; i <= lista.length; i++){
-        if(lista[i] > lista[i+1]){
-            temp = lista[i]
-            lista[i] = lista[i+1]
-            lista[i+1] = lista[i]
-        }
-        if(i != 0){
-            if(lista[i] < lista[i-1])
-                temp = lista[i]
-                lista[i] = lista[i+1]
-                lista[i+1] = lista[i]
-        }
-    }
-    return lista
-}
-let teste:number[] = [4,5,2,1,6,7,9,8]
-console.log(Ordenar(teste))
