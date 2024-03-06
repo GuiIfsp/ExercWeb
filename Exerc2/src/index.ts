@@ -25,7 +25,7 @@ class Carro{
         this.placa = placa
     }
 
-    idade (){
+    idade(){
         let AnoATual: number = 2024
         return AnoATual - this.ano
     }
@@ -33,4 +33,4 @@ class Carro{
 
 const CarroLegal = new Carro("Carro Legal", "COOL-DUDE", 2020)
 console.log(CarroLegal)
-console.log(CarroLegal.idade)
+console.log(CarroLegal.idade())

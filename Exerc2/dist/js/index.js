@@ -23,4 +23,5 @@ class Carro {
     }
 }
 const CarroLegal = new Carro("Carro Legal", "COOL-DUDE", 2020);
-console.log(CarroLegal.idade);
+console.log(CarroLegal);
+console.log(CarroLegal.idade());
